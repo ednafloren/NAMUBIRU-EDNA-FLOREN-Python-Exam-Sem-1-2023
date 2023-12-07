@@ -1,4 +1,5 @@
 # i)
+# asking for userinput
 age=int(input("Enter your age:"))
 if (age>=18):
     print("You are eligible")
@@ -8,6 +9,7 @@ else:
 
 
 # ii)
+# creating a function
 def grade_students():
        mark=int(input("Enter mark:"))
        if(mark>=90):
@@ -58,7 +60,7 @@ def grade_students(mark):
             
             
             # vi)
-            
+
 grade_students(78)
 
 # iv)
