@@ -51,8 +51,9 @@ print(student_info)
 # vi)
 newdict={}
 original_dict={'a':3,'b':8,'c':7}
-if(original_dict.values==5):
-    newdict.append(original_dict.values)
-    print(newdict)
+
+
+newdict = {key: value for key, value in original_dict.items() if value > 5}
+print(newdict)
 
 

@@ -65,18 +65,19 @@ grade_students(78)
 
 # iv)
 def grade_students(mark):
-    
-       if(mark>=90):
+    if isinstance(mark, int):
+        if mark >= 90:
             print('A')
-       elif (80<=mark<=89):
+        elif 80 <= mark <= 89:
             print('B')
-       elif (70<=mark<=79):
+        elif 70 <= mark <= 79:
             print('C')
-       elif (60<=mark<=69):
+        elif 60 <= mark <= 69:
             print('D')
-       elif(mark<60):
-            print("F")
-    #    elif((type(mark))!==int):
-    # #    elif(mark.isNumeric()):
-            print('Invalid input')
-grade_students("we")
+        elif mark < 60:
+            print('F')
+    else:
+        print('Invalid input')
+
+
+grade_students("we")  

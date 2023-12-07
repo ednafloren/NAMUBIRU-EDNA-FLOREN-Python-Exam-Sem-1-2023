@@ -11,8 +11,9 @@ class Book:
             print('Pages: ',self.pages)
 
             # iii)
+            #method to return
       def __str__(self):
-            return f'{self.author} {self.title}'
+            return f' {self.title}{self.author}'
       
 
 book1=Book('Riverbetween','PAUL',30)
